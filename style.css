@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d25a0;
+  padding-bottom: 40px;
+}
+.header-left {
+  align-items: center;
+}
+.header-left h1 {
+  width: 485px;
+  line-height: 80px;
+  font-size: 64px;
+  padding-left: 156px;
+  padding-top: 207px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+.header-left a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  margin-left: 156px;
+}
+.header-right img {
+  padding-top: 153px;
+  padding-right: 60px;
+  width: 556px;
+  height: 438px;
+}
+/* main content style start  */
+
+.player-album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 70px 150px;
+  grid-gap: 30px;
+}
+.player-frame {
+  box-shadow: 10px 10px 20px gray;
+}
+.player-photo img {
+  width: 300px;
+  height: 256px;
+  margin: 15px;
+}
+.player-details {
+  margin: 15px;
+}
+.player-details p {
+  color: #6c6c6c;
+}
+
+/* footer styles  */
+footer {
+  text-align: center;
+}
+.footer-logo img {
+  width: 484px;
+  height: 110px;
+}
+.footer-icons {
+  padding-bottom: 20px;
+}
+.footer-icons img {
+  width: 32px;
+  height: 32px;
+}
+.copyright {
+  padding-bottom: 40px;
+}
+#copy-icon:after {
+  content: "\00a9";
+}
+/* video {
+  margin-top: -50px;
+  margin-left: 400px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+} */
+a:hover img {
+  /* visibility: visible;
+  opacity: 1; */
+  transform: scale(1.2) rotate(360deg);
+  transition: transform 2s ease;
+}
