@@ -12,6 +12,7 @@ body {
 /*....................................................................
  header part style  
  ....................................................................*/
+
 .header {
   display: flex;
   justify-content: space-evenly;
@@ -26,7 +27,7 @@ body {
   line-height: 80px;
   font-size: 64px;
   margin-left: 156px;
-  margin-top: 207px;
+  margin-top: 100px;
   margin-bottom: 20px;
   color: #ffffff;
 }
@@ -38,7 +39,7 @@ body {
   margin-left: 156px;
 }
 .header-right img {
-  margin-top: 153px;
+  margin-top: 45px;
   margin-right: 60px;
   width: 556px;
   height: 438px;
@@ -178,6 +179,7 @@ responsibe styles .
     justify-content: center;
   }
   .header-left h1 {
+    width: 350px;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 56px;
@@ -187,7 +189,7 @@ responsibe styles .
   }
   .header-right img {
     margin-top: 40px;
-    width: 90%;
+    width: 80%;
     height: 80%;
   }
   .all-legends {
@@ -227,6 +229,7 @@ responsibe styles .
     justify-content: center;
   }
   .header-left h1 {
+    width: 350px;
     text-align: left;
     font-size: 64px;
   }
@@ -236,7 +239,7 @@ responsibe styles .
   .header-right img {
     margin-top: 40px;
     margin-left: 40px;
-    width: 90%;
+    width: 80%;
     height: 80%;
   }
   .all-tournaments {
