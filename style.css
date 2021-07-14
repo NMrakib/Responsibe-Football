@@ -197,6 +197,12 @@ responsibe styles .
   .player-album {
     margin: 20px 10px;
   }
+  .player-photo img {
+    margin: 15px;
+  }
+  .player-details {
+    margin: 15px;
+  }
   .all-tournaments {
     margin: 10px 80px;
   }
@@ -243,6 +249,12 @@ responsibe styles .
   }
   .player-album {
     margin: 20px 10px;
+  }
+  .player-photo img {
+    margin: 15px;
+  }
+  .player-details {
+    margin: 15px;
   }
   .all-tournaments {
     margin: 10px 80px;
