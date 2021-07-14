@@ -1,3 +1,4 @@
+/* for all part  */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+/*....................................................................
+ header part style  
+ ....................................................................*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -39,7 +42,11 @@ body {
   width: 556px;
   height: 438px;
 }
-/* main content style start  */
+/* ........................................................................
+main content style start 
+........................................................................... */
+
+/* legend player style  */
 .legend-players {
   background-color: rgb(236, 228, 213);
 }
@@ -47,35 +54,38 @@ body {
   text-align: center;
   padding: 50px 0;
 }
-.top-players {
+.top-legends {
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
 }
-.players {
+.all-legends {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 30px;
 }
-.player {
+.legend {
   display: flex;
   align-items: center;
   padding: 0 20px 40px;
 }
-.player img {
+.legend img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
 }
+
 .player-name {
   margin-left: 16px;
   font-size: 18px;
 }
 
+/* top player style  */
+
 .player-album {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 70px 150px;
+  padding: 70px 100px;
   grid-gap: 30px;
 }
 .player-frame {
@@ -92,6 +102,8 @@ body {
 .player-details p {
   color: #6c6c6c;
 }
+
+/* tournament style  */
 
 .all-tournaments {
   display: grid;
@@ -119,7 +131,9 @@ body {
   color: #aeaeae;
 }
 
-/* footer styles  */
+/* .......................................................................
+footer styles  
+................................................................................*/
 footer {
   text-align: center;
 }
@@ -140,16 +154,7 @@ footer {
 #copy-icon:after {
   content: "\00a9";
 }
-/* video {
-  margin-top: -50px;
-  margin-left: 400px;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-} */
 .header-right:hover img {
-  /* visibility: visible;
-  opacity: 1; */
   transform: scale(1.2) rotate(360deg);
   transition: transform 2s ease;
 }
