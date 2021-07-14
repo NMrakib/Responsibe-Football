@@ -1,3 +1,5 @@
+/* font style  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* for all part  */
 * {
   margin: 0;
@@ -12,7 +14,7 @@ body {
  ....................................................................*/
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #2d25a0;
   padding-bottom: 40px;
 }
@@ -23,10 +25,9 @@ body {
   width: 485px;
   line-height: 80px;
   font-size: 64px;
-  padding-left: 156px;
-  padding-top: 207px;
+  margin-left: 156px;
+  margin-top: 207px;
   margin-bottom: 20px;
-  text-align: left;
   color: #ffffff;
 }
 .header-left a {
@@ -37,8 +38,8 @@ body {
   margin-left: 156px;
 }
 .header-right img {
-  padding-top: 153px;
-  padding-right: 60px;
+  margin-top: 153px;
+  margin-right: 60px;
   width: 556px;
   height: 438px;
 }
@@ -85,7 +86,7 @@ main content style start
 .player-album {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 70px 100px;
+  margin: 40px 100px;
   grid-gap: 30px;
 }
 .player-frame {
@@ -109,8 +110,8 @@ main content style start
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 24px;
-  padding-left: 150px;
-  padding-bottom: 60px;
+  margin-left: 150px;
+  margin-bottom: 60px;
 }
 .tournament .tournament-banner img {
   width: 224px;
@@ -118,8 +119,9 @@ main content style start
 }
 .tournament-info {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
+  flex-direction: column;
 }
 .fa-star {
   font-size: 12px;
@@ -129,6 +131,9 @@ main content style start
 }
 .fa-star.empty {
   color: #aeaeae;
+}
+.champ-team {
+  color: #6c6c6c;
 }
 
 /* .......................................................................
@@ -157,4 +162,99 @@ footer {
 .header-right:hover img {
   transform: scale(1.2) rotate(360deg);
   transition: transform 2s ease;
+}
+
+/*...........................................................................................
+responsibe styles .
+........................................................................................... */
+
+/* responsibe for mobile  */
+@media only screen and (max-width: 668px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .header-left {
+    align-items: left;
+  }
+  .header-left h1 {
+    margin-left: 20px;
+    font-size: 56px;
+  }
+  .header-left a {
+    margin-left: 20px;
+  }
+  .header-right img {
+    margin-top: 40px;
+    width: 90%;
+    height: 80%;
+  }
+  .all-legends,
+  .all-tournaments,
+  .player-album {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player-album {
+    margin: 20px 10px;
+  }
+  .all-tournaments {
+    margin: 10px 80px;
+  }
+  .tournament {
+    margin-bottom: 20px;
+  }
+  .legend {
+    flex-direction: column;
+  }
+  .footer-logo img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+/* responsibe for ipad  */
+
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .header-left {
+    justify-content: center;
+  }
+  .header-left h1 {
+    text-align: left;
+    font-size: 64px;
+  }
+  .header-left a {
+    text-align: left;
+  }
+  .header-right img {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 90%;
+    height: 80%;
+  }
+  .all-tournaments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player-album {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player-album {
+    margin: 20px 10px;
+  }
+  .all-tournaments {
+    margin: 10px 80px;
+  }
+  .tournament {
+    margin-bottom: 20px;
+  }
+  .legend {
+    flex-direction: column;
+  }
+  .footer-logo img {
+    width: 80%;
+    height: 80%;
+  }
 }
