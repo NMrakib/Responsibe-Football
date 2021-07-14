@@ -90,7 +90,7 @@ main content style start
   grid-gap: 30px;
 }
 .player-frame {
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 10px 10px 50px gray;
 }
 .player-photo img {
   width: 300px;
@@ -169,42 +169,40 @@ responsibe styles .
 ........................................................................................... */
 
 /* responsibe for mobile  */
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 688px) {
   .header {
     width: 100%;
     flex-direction: column;
   }
   .header-left {
-    align-items: left;
+    justify-content: center;
   }
   .header-left h1 {
     margin-left: 20px;
+    margin-right: 20px;
     font-size: 56px;
   }
   .header-left a {
-    margin-left: 20px;
+    text-align: left;
   }
   .header-right img {
     margin-top: 40px;
     width: 90%;
     height: 80%;
   }
-  .all-legends,
-  .all-tournaments,
-  .player-album {
+  .all-legends {
     grid-template-columns: repeat(1, 1fr);
   }
-  .player-album {
-    margin: 20px 10px;
+  .all-tournaments {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px 80px;
   }
-  .player-photo img {
-    margin: 15px;
+  .player-album {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 10px;
   }
   .player-details {
     margin: 15px;
-  }
-  .all-tournaments {
-    margin: 10px 80px;
   }
   .tournament {
     margin-bottom: 20px;
@@ -220,7 +218,7 @@ responsibe styles .
 
 /* responsibe for ipad  */
 
-@media only screen and (min-width: 668px) and (max-width: 992px) {
+@media only screen and (min-width: 688px) and (max-width: 992px) {
   .header {
     width: 100%;
     flex-direction: column;
@@ -243,21 +241,11 @@ responsibe styles .
   }
   .all-tournaments {
     grid-template-columns: repeat(2, 1fr);
+    margin: 10px 80px;
   }
   .player-album {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .player-album {
     margin: 20px 10px;
-  }
-  .player-photo img {
-    margin: 15px;
-  }
-  .player-details {
-    margin: 15px;
-  }
-  .all-tournaments {
-    margin: 10px 80px;
   }
   .tournament {
     margin-bottom: 20px;
