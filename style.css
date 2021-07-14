@@ -44,6 +44,13 @@ body {
   width: 556px;
   height: 438px;
 }
+#copy-icon:after {
+  content: "\00a9";
+}
+.header-right:hover img {
+  transform: scale(1.2) rotate(360deg);
+  transition: transform 2s ease;
+}
 /* ........................................................................
 main content style start 
 ........................................................................... */
@@ -149,20 +156,15 @@ footer {
 }
 .footer-icons {
   padding-bottom: 20px;
+  text-align: center;
 }
-.footer-icons img {
+.footer-icons i {
   width: 32px;
   height: 32px;
+  color: #969bab;
 }
 .copyright {
   padding-bottom: 40px;
-}
-#copy-icon:after {
-  content: "\00a9";
-}
-.header-right:hover img {
-  transform: scale(1.2) rotate(360deg);
-  transition: transform 2s ease;
 }
 
 /*...........................................................................................
